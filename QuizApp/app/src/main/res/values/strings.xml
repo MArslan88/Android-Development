@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+
+    <string name="question1">1. _____ is category of computer hardware.</string>
+    <string name="question1_choice1">Input</string>
+    <string name="question1_choice2">Output</string>
+    <string name="question1_choice3">Storage</string>
+    <string name="question1_choice4">All of the above</string>
+
+    <string name="question2">2.	_____ is an important component of microcomputer system.</string>
+    <string name="question2_choice1">Kilobyte</string>
+    <string name="question2_choice2">Microprocessor</string>
+    <string name="question2_choice3">Megabyte</string>
+    <string name="question2_choice4">none of the above</string>
+
+    <string name="question3">3.	_____ is not found in C.P.U.</string>
+    <string name="question3_choice1">ALU</string>
+    <string name="question3_choice2">Control Unit</string>
+    <string name="question3_choice3">RAM</string>
+    <string name="question3_choice4">Processing Register</string>
+
+    <string name="question4">4.	_____ is a type of impact printers.</string>
+    <string name="question4_choice1">Laser</string>
+    <string name="question4_choice2">Thermal</string>
+    <string name="question4_choice3">Dot-Matrix</string>
+    <string name="question4_choice4">Inkjet</string>
+
+    <string name="question5">5.	_____ program design technique shows program logic.</string>
+    <string name="question5_choice1">Flow char</string>
+    <string name="question5_choice2">Logical Operation</string>
+    <string name="question5_choice3">Computer</string>
+    <string name="question5_choice4">None of the above</string>
+
+    <string name="question6">6.	_____ is used as counter in BASIC programs.</string>
+    <string name="question6_choice1">A = A+1</string>
+    <string name="question6_choice2">"A less than 1"</string>
+    <string name="question6_choice3">A or 1</string>
+    <string name="question6_choice4">None of the above</string>
+
+    <string name="question7">7.	_____ is an example of String data.</string>
+    <string name="question7_choice1">HAMMAD</string>
+    <string name="question7_choice2">M-264</string>
+    <string name="question7_choice3">264</string>
+    <string name="question7_choice4">All of the above</string>
+
+    <string name="question8">8.	The most important characteristic of ROM is _____.</string>
+    <string name="question8_choice1">It performs mathematical calculation</string>
+    <string name="question8_choice2">it is volatile</string>
+    <string name="question8_choice3">it is non – volatile</string>
+    <string name="question8_choice4">All of the above</string>
+
+    <string name="question9">9.	_____ statement is used to transfer the control of program conditionally.</string>
+    <string name="question9_choice1">GOTO</string>
+    <string name="question9_choice2">ON GOTO</string>
+    <string name="question9_choice3">END</string>
+    <string name="question9_choice4">All of the above</string>
+
+    <string name="question10">10.	Disk operating system is abbreviated as _____.</string>
+    <string name="question10_choice1">DOS</string>
+    <string name="question10_choice2">DS</string>
+    <string name="question10_choice3">OS</string>
+    <string name="question10_choice4">None of the above</string>
+
+</resources>
