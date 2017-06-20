@@ -1,15 +1,19 @@
 package com.example.android.quizapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     int count=0;
+    String name,reportMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +21,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    public void sendReport(View view){
+        // To Send the Test report through SMS.
+        Uri uri = Uri.parse("smsto:03453235126");
+        Intent it = new Intent(Intent.ACTION_SENDTO, uri);
+        it.putExtra("sms_body", reportMessage);
+        startActivity(it);
+
+    }
+
     public void submitAnswers(View view){
+
+        EditText nameText= (EditText)findViewById(R.id.name_edit_txt);
+        name=nameText.getText().toString();
+
         // Question 1---------------------------------------------------------
         RadioButton quest1=(RadioButton)findViewById(R.id.question1_choice4);
         if(quest1.isChecked()){
@@ -82,18 +100,17 @@ public class MainActivity extends AppCompatActivity {
         }
         String score=Integer.toString(count);
         if(count>=7){
-            Toast.makeText(this,"Congratulation! you have passed the test and your score is "+score,Toast.LENGTH_LONG).show();
-            count=0;
+            Toast.makeText(this,name+" congratulation! you have passed the test and your score is "+score,Toast.LENGTH_LONG).show();
+
         }else {
-            Toast.makeText(this,"Try again, you are FAIL and your score is "+score,Toast.LENGTH_LONG).show();
-            count=0;
+            Toast.makeText(this,name+" try again, you are FAIL and your score is "+score,Toast.LENGTH_LONG).show();
+
         }
 
-
-
-
+        // collecting data for msg report
+        reportMessage="Name: "+name;
+        reportMessage +="\nTotal Marks: 10";
+        reportMessage +="\nGain Marks: "+count;
+        count=0;
     }
-
-
-
 }

@@ -14,6 +14,12 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Name"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/name_edit_txt"/>
 
         <TextView
             android:id="@+id/question1"
@@ -425,13 +431,29 @@
                 android:checked="false"
                 android:text="@string/question10_choice4" />
         </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/submit_answers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="submitAnswers"
-            android:text="Submit" />
+    <Button
+        android:id="@+id/submit_answers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="submitAnswers"
+        android:text="Submit" />
+    <Button
+        android:id="@+id/send_report"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="sendReport"
+        android:text="Report" />
+
+</LinearLayout>
+
 
     </LinearLayout>
 </ScrollView>
